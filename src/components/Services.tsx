@@ -136,7 +136,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
 
 export default function Services() {
   return (
-    <section id="services" className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 overflow-hidden bg-[#020205]">
+    <section id="services" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 overflow-hidden bg-[#020205]">
       {/* Background ambient noise glow to separate sections */}
       <div className="absolute top-[30%] left-[50%] -translate-x-1/2 w-[60vw] h-[60vw] rounded-full bg-electric-blue/4 blur-[160px] pointer-events-none -z-10" />
 

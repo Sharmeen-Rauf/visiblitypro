@@ -96,7 +96,9 @@ export default function Navbar() {
             <div className="hidden md:block">
               <Magnetic strength={0.25}>
                 <a
-                  href="#contact"
+                  href="https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20book%20a%20free%20growth%20consultation."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="relative group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-white text-black overflow-hidden shadow-[0_4px_20px_rgba(255,255,255,0.1)] transition-all duration-300 hover:shadow-[0_4px_30px_rgba(0,240,255,0.4)]"
                 >
                   <span className="relative z-10 flex items-center gap-1.5">
@@ -169,7 +171,9 @@ export default function Navbar() {
                 </span>
               </div>
               <a
-                href="#contact"
+                href="https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20book%20a%20free%20growth%20consultation."
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 py-4 rounded-full text-sm font-bold uppercase bg-white text-black"
               >

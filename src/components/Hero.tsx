@@ -123,7 +123,9 @@ export default function Hero() {
             <Magnetic strength={0.2}>
               <Tilt maxRotation={6}>
                 <a
-                  href="#contact"
+                  href="https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20start%20a%20digital%20growth%20audit."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="relative group flex items-center justify-center gap-2.5 px-8 py-4.5 rounded-full text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-electric-blue to-hologram-cyan text-black shadow-[0_4px_30px_rgba(0,240,255,0.25)] transition-all duration-500 hover:shadow-[0_4px_45px_rgba(0,240,255,0.5)] overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-1.5">

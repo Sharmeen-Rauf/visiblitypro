@@ -205,7 +205,9 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
           {/* Interactive Button */}
           <div className="mt-10">
             <a
-              href="#contact"
+              href={`https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20package%20(${pkg.price}).`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`w-full relative group inline-flex items-center justify-center gap-2 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 pkg.featured
                   ? 'bg-white text-black shadow-[0_4px_25px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_35px_rgba(0,240,255,0.4)]'
@@ -229,7 +231,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
+    <section id="pricing" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
       {/* Background neon elements */}
       <div className="absolute bottom-[20%] right-[15%] w-[45vw] h-[45vw] rounded-full bg-cyber-violet/4 blur-[160px] pointer-events-none -z-10" />
 

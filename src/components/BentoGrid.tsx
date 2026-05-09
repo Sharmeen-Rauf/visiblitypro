@@ -43,7 +43,7 @@ function BentoTile({
 
 export default function BentoGrid() {
   return (
-    <section id="why-us" className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 bg-[#020205] overflow-hidden">
+    <section id="why-us" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#020205] overflow-hidden">
       {/* Aurora Ambient Spot */}
       <div className="absolute top-[40%] left-[10%] w-[50vw] h-[50vw] rounded-full bg-electric-blue/4 blur-[160px] pointer-events-none -z-10" />
 

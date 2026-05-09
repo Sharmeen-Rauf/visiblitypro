@@ -25,12 +25,20 @@ export default function Contact() {
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
+      
+      // Dynamically build message with form fields
+      const waMsg = `Hello Visibility Pro, my name is ${formState.name}. My corporate email is ${formState.email}. My website is ${formState.website}. I am interested in your ${formState.service} growth services.`;
+      const waUrl = `https://wa.me/923146773542?text=${encodeURIComponent(waMsg)}`;
+      
+      // Instantly open WhatsApp chat
+      window.open(waUrl, '_blank');
+      
       setFormState({ name: '', email: '', website: '', service: 'SEO' });
     }, 2000);
   };
 
   return (
-    <section id="contact" className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
+    <section id="contact" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
       
       {/* Massive Cinematic End Aurora Gradients */}
       <div className="absolute top-[10%] left-[-20%] w-[65vw] h-[65vw] rounded-full bg-cyber-violet/8 blur-[180px] pointer-events-none -z-10 animate-pulse-slow" />
@@ -246,7 +254,7 @@ export default function Contact() {
 
             <Magnetic strength={0.2}>
               <a
-                href="https://wa.me/1234567890?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20book%20a%20free%20growth%20audit."
+                href="https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20book%20a%20free%20growth%20audit."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest text-white border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.05]"

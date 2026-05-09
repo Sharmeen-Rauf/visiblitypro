@@ -83,7 +83,7 @@ export default function Testimonials() {
   const activeTestimonial = testimonialsList[currentIndex];
 
   return (
-    <section className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 bg-[#020205] overflow-hidden">
+    <section className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#020205] overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[55vw] h-[55vw] rounded-full bg-cyber-violet/5 blur-[170px] pointer-events-none -z-10 animate-pulse-slow" />
 

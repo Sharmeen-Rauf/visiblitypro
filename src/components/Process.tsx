@@ -61,7 +61,7 @@ export default function Process() {
   });
 
   return (
-    <section id="process" className="relative w-full py-24 md:py-36 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
+    <section id="process" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
       {/* Aurora Ambient Light */}
       <div className="absolute top-[50%] right-[0%] w-[45vw] h-[45vw] rounded-full bg-cyber-violet/5 blur-[150px] pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-[5%] w-[40vw] h-[40vw] rounded-full bg-electric-blue/5 blur-[150px] pointer-events-none -z-10" />
