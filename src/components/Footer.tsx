@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Logo & Slogan Column */}
           <div className="flex flex-col gap-4 text-left max-w-sm">
             <span className="font-display font-black text-2xl tracking-wider text-white uppercase">
-              APEX<span className="text-electric-blue">.</span>
+              VISIBILITY PRO<span className="text-electric-blue">.</span>
             </span>
             <p className="text-xs text-zinc-500 leading-relaxed font-mono uppercase tracking-widest mt-1">
               Engineering digital supremacy. High-performance software, enterprise SEO, and conversion architectures.
@@ -94,7 +94,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-white/[0.02] border border-white/5 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300"
-                      aria-label={`Apex Social Channel: ${soc.name}`}
+                      aria-label={`Visibility Pro Social Channel: ${soc.name}`}
                     >
                       {soc.svg}
                     </a>
@@ -112,7 +112,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-2">
           
           <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600">
-            © 2026 APEX DIGITAL INC. METEORIC SCALING CODED.
+            © 2026 VISIBILITY PRO INC. METEORIC SCALING CODED.
           </span>
 
           {/* Magnetic scroll to top button */}

@@ -10,10 +10,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Apex Digital — Digital Growth, Engineered for Results.",
-  description: "Apex Digital is an ultra-premium, Silicon Valley level AI-powered software house. We specialize in Next-Gen Web Development, Search Engine Optimization (SEO), PPC campaigns, and High-Conversion Sales funnels.",
-  keywords: ["Software House", "AI Agency", "Web Development", "SEO", "PPC", "Social Media", "Local Visibility", "Next.js 15", "Apex Digital"],
-  authors: [{ name: "Apex Digital" }],
+  title: "Visibility Pro — Digital Growth, Engineered for Results.",
+  description: "Visibility Pro is an ultra-premium, Silicon Valley level AI-powered software house. We specialize in Next-Gen Web Development, Search Engine Optimization (SEO), PPC campaigns, and High-Conversion Sales funnels.",
+  keywords: ["Software House", "AI Agency", "Web Development", "SEO", "PPC", "Social Media", "Local Visibility", "Next.js 15", "Visibility Pro"],
+  authors: [{ name: "Visibility Pro" }],
 };
 
 export default function RootLayout({

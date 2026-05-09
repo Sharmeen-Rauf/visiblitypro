@@ -25,7 +25,7 @@ const testimonialsList: Testimonial[] = [
     rating: 5,
   },
   {
-    quote: "Apex did not just build our website—they engineered our entire revenue machine. Our inbound pipeline increased by 185% in 90 days.",
+    quote: "Visibility Pro did not just build our website—they engineered our entire revenue machine. Our inbound pipeline increased by 185% in 90 days.",
     author: "Devon Chen",
     role: "Co-Founder, Synthetix Corp",
     rating: 5,

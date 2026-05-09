@@ -161,7 +161,7 @@ export default function Contact() {
                       >
                         {isSubmitting ? (
                           <span className="flex items-center gap-2 animate-pulse">
-                            Syncing with Apex API...
+                            Syncing with Visibility Pro API...
                           </span>
                         ) : (
                           <span className="relative z-10 flex items-center gap-1.5">
@@ -246,7 +246,7 @@ export default function Contact() {
 
             <Magnetic strength={0.2}>
               <a
-                href="https://wa.me/1234567890?text=Hello%20Apex%20Digital,%20I%20would%20like%20to%20book%20a%20free%20growth%20audit."
+                href="https://wa.me/1234567890?text=Hello%20Visibility%20Pro,%20I%20would%20like%20to%20book%20a%20free%20growth%20audit."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest text-white border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.05]"

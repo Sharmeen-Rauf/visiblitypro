@@ -56,7 +56,7 @@ export default function BentoGrid() {
           </span>
           <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
             WHY THE WORLD'S BEST <br />
-            <span className="bg-gradient-to-r from-electric-blue via-hologram-cyan to-cyber-violet bg-clip-text text-transparent">CHOOSE APEX.</span>
+            <span className="bg-gradient-to-r from-electric-blue via-hologram-cyan to-cyber-violet bg-clip-text text-transparent">CHOOSE VISIBILITY PRO.</span>
           </h2>
           <p className="text-sm md:text-base text-zinc-400 mt-2 leading-relaxed">
             We operate at the convergence of absolute technological scale and data science. Here is why enterprise giants and ambitious startups partner with us.

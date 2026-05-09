@@ -49,7 +49,7 @@ export default function Navbar() {
           <Magnetic strength={0.2}>
             <a href="#" className="flex items-center gap-2 group">
               <span className="font-display font-black text-xl md:text-2xl tracking-wider text-white uppercase relative overflow-hidden">
-                APEX
+                VISIBILITY PRO
                 <span className="text-electric-blue">.</span>
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-electric-blue translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-out" />
               </span>

@@ -81,7 +81,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       <div className="w-full flex justify-between items-center text-zinc-500 font-mono text-xs md:text-sm">
         <span className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-electric-blue animate-pulse" />
-          APEX CORE SYSTEM v1.5
+          VISIBILITY PRO CORE SYSTEM v1.5
         </span>
         <span>© 2026 ALL RIGHTS RESERVED</span>
       </div>
@@ -93,7 +93,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             ref={textRef}
             className="font-display font-black text-5xl md:text-8xl tracking-[0.15em] uppercase bg-gradient-to-r from-white via-zinc-400 to-white bg-clip-text text-transparent"
           >
-            APEX DIGITAL
+            VISIBILITY PRO
           </h1>
           <p
             ref={subtitleRef}
