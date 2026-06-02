@@ -20,86 +20,53 @@ interface Package {
 
 const packagesList: Package[] = [
   {
-    title: "Traffic Health Check",
-    price: "$1,850",
-    period: "One-off",
-    subtitle: "Deep technical audit & pipeline diagnostic.",
+    title: "Self-Paced Curriculum",
+    price: "$450",
+    period: "one-off",
+    subtitle: "Lifetime curriculum access & update log.",
     features: [
-      "Technical crawler bottleneck analysis",
-      "Competitor keyword gap extraction",
-      "Indexation bug and redirect cleanses",
-      "2-Hour squad video alignment briefing"
+      "Full video lectures & resources",
+      "Figma workspace component libraries",
+      "Monthly community group reviews",
+      "Lifetime Slack group access"
     ],
-    cta: "Order Audit Sprint",
-    tag: "Audit",
+    cta: "Purchase Access",
+    tag: "Standard",
     colSpan: "col-span-12 lg:col-span-4",
-    color: "rgba(0, 240, 255, 0.15)", // Electric blue
+    color: "rgba(100, 206, 251, 0.15)",
   },
   {
-    title: "Money Page Revamp",
-    price: "$3,400",
-    period: "One-off",
-    subtitle: "Precision conversion rate & speed refactor.",
+    title: "Cohort Bootcamp",
+    price: "$2,400",
+    period: "one-off",
+    subtitle: "12-week interactive intensive design cohort.",
     features: [
-      "Next.js/React performance refactor",
-      "Surgical conversion copywriting writeups",
-      "UX/UI micro-interaction styling",
-      "A/B split testing configuration"
+      "Everything in Self-Paced package",
+      "2× Weekly live instructor critiques",
+      "Real-world group capstone project",
+      "Structured career roadmap planning"
     ],
-    cta: "Revamp Landing Page",
-    tag: "Performance",
-    colSpan: "col-span-12 lg:col-span-4",
-    color: "rgba(189, 0, 255, 0.15)", // Cyber violet
-  },
-  {
-    title: "GEO & AEO Audit",
-    price: "$2,200",
-    period: "One-off",
-    subtitle: "Schema mapping for Generative/AI engines.",
-    features: [
-      "Perplexity & ChatGPT citation check",
-      "Schema graph entity injections",
-      "AI vector search retrieval audits",
-      "Voice search optimization roadmap"
-    ],
-    cta: "Secure AI Authority",
-    tag: "AI Ready",
-    colSpan: "col-span-12 lg:col-span-4",
-    color: "rgba(0, 255, 209, 0.12)", // Hologram cyan
-  },
-  {
-    title: "Content Engine Sprint",
-    price: "$4,800",
-    period: "/mo",
-    subtitle: "Dominate search clusters with automated speed.",
-    features: [
-      "8 Long-form semantic topic clusters",
-      "High-authority backlink development",
-      "Google Business Profile content sync",
-      "Real-time custom reporting streams"
-    ],
-    cta: "Initiate Engine",
-    tag: "Growth",
-    colSpan: "col-span-12 lg:col-span-6",
-    color: "rgba(255, 0, 128, 0.12)", // Neon Magenta
-  },
-  {
-    title: "Retained Growth Partner",
-    price: "$8,500",
-    period: "/mo",
-    subtitle: "Complete digital dominance squad retainer.",
-    features: [
-      "Dedicated Full-Stack Growth Engineer",
-      "Unlimited Next.js landing layouts",
-      "Continuous organic SEO + local Maps",
-      "Google, Meta & Social PPC audits",
-      "Weekly diagnostic briefing streams"
-    ],
-    cta: "Retain Growth Squad",
-    tag: "FEATURED PARTNER",
+    cta: "Enroll in Cohort",
+    tag: "Popular",
     featured: true,
-    colSpan: "col-span-12 lg:col-span-6",
-    color: "rgba(0, 240, 255, 0.3)", // Rich electric cyan
+    colSpan: "col-span-12 lg:col-span-4",
+    color: "rgba(96, 165, 250, 0.3)",
+  },
+  {
+    title: "1-on-1 Mentorship",
+    price: "$4,800",
+    period: "one-off",
+    subtitle: "Direct career placement tutoring & mock tests.",
+    features: [
+      "Everything in Cohort Bootcamp",
+      "Weekly 1-on-1 design critique slots",
+      "Job application portfolio reviews",
+      "Exclusive recruiter placement index"
+    ],
+    cta: "Apply for Mentor",
+    tag: "Premium",
+    colSpan: "col-span-12 lg:col-span-4",
+    color: "rgba(100, 206, 251, 0.15)",
   },
 ];
 
@@ -145,7 +112,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
 
           {/* Featured Gradient Pulse Border */}
           {pkg.featured && (
-            <div className="absolute inset-0 rounded-[2.5rem] p-[1.5px] bg-gradient-to-r from-electric-blue via-cyber-violet to-hologram-cyan -z-20 opacity-30 group-hover:opacity-75 transition-opacity duration-500" />
+            <div className="absolute inset-0 rounded-[2.5rem] p-[1.5px] bg-gradient-to-r from-electric-blue via-white to-cyber-violet -z-20 opacity-30 group-hover:opacity-75 transition-opacity duration-500" />
           )}
 
           <div>
@@ -205,12 +172,12 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
           {/* Interactive Button */}
           <div className="mt-10">
             <a
-              href={`https://wa.me/923146773542?text=Hello%20Visibility%20Pro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20package%20(${pkg.price}).`}
+              href={`https://wa.me/923146773542?text=Hello%20DesignPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20program%20(${pkg.price}).`}
               target="_blank"
               rel="noopener noreferrer"
               className={`w-full relative group inline-flex items-center justify-center gap-2 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 pkg.featured
-                  ? 'bg-white text-black shadow-[0_4px_25px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_35px_rgba(0,240,255,0.4)]'
+                  ? 'bg-white text-black shadow-[0_4px_25px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_35px_rgba(100,206,251,0.4)]'
                   : 'bg-white/[0.03] text-white border border-white/5 hover:bg-white hover:text-black hover:border-transparent'
               }`}
             >
@@ -219,7 +186,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
               </span>
               {pkg.featured && (
-                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-hologram-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10 rounded-full" />
+                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10 rounded-full" />
               )}
             </a>
           </div>
@@ -231,7 +198,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
+    <section id="pricing" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#000000] overflow-hidden">
       {/* Background neon elements */}
       <div className="absolute bottom-[20%] right-[15%] w-[45vw] h-[45vw] rounded-full bg-cyber-violet/4 blur-[160px] pointer-events-none -z-10" />
 
@@ -241,15 +208,15 @@ export default function Pricing() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex flex-col gap-4 text-left max-w-xl">
             <span className="text-xs font-mono font-bold tracking-[0.3em] text-electric-blue uppercase">
-              REVENUE ENGINES
+              TUITION INVESTMENT
             </span>
             <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
-              SURGICAL INVESTMENT <br />
-              <span className="bg-gradient-to-r from-electric-blue via-hologram-cyan to-cyber-violet bg-clip-text text-transparent">TIERS.</span>
+              TRANSPARENT TUITION <br />
+              <span className="bg-gradient-to-r from-electric-blue via-white to-cyber-violet bg-clip-text text-transparent">TIERS.</span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-md text-left leading-relaxed">
-            Transparent, performance-focused pricing structures designed to remove friction, generate exponential ROI, and secure permanent search authority.
+            Choose the pace that matches your goals. Flat rates with no hidden fees and dedicated career placement support from day one.
           </p>
         </div>
 
@@ -263,7 +230,7 @@ export default function Pricing() {
         {/* Small Risk Guarantee Footer */}
         <div className="w-full mt-4 flex items-center justify-center gap-3 py-4 px-6 rounded-3xl bg-white/[0.01] border border-white/5 max-w-3xl mx-auto text-xs text-zinc-500 font-mono uppercase">
           <ShieldAlert className="w-4 h-4 text-cyber-violet" />
-          <span>Need a customized enterprise retainer structure? <a href="#contact" className="text-white hover:underline">Contact our alignment directors</a></span>
+          <span>Need a customized installment payment structure? <a href="#contact" className="text-white hover:underline">Contact our enrollment coordinators</a></span>
         </div>
       </div>
     </section>

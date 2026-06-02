@@ -38,9 +38,8 @@ export default function Footer() {
     }
   ];
 
-
   return (
-    <footer className="relative w-full py-16 px-4 md:px-8 xl:px-16 bg-[#020205] border-t border-white/[0.04] overflow-hidden">
+    <footer className="relative w-full py-16 px-4 md:px-8 xl:px-16 bg-[#000000] border-t border-white/[0.04] overflow-hidden">
       
       {/* Background glowing circle */}
       <div className="absolute bottom-[-10%] left-[50%] -translate-x-1/2 w-[350px] h-[350px] rounded-full bg-electric-blue/4 blur-[100px] pointer-events-none -z-10" />
@@ -53,10 +52,10 @@ export default function Footer() {
           {/* Logo & Slogan Column */}
           <div className="flex flex-col gap-4 text-left max-w-sm">
             <span className="font-display font-black text-2xl tracking-wider text-white uppercase">
-              VISIBILITY PRO<span className="text-electric-blue">.</span>
+              DESIGNPRO<span className="text-electric-blue">.</span>
             </span>
             <p className="text-xs text-zinc-500 leading-relaxed font-mono uppercase tracking-widest mt-1">
-              Engineering digital supremacy. High-performance software, enterprise SEO, and conversion architectures.
+              Empowering next-gen product designers. Intensive design cohorts, active industry mentorship, and portfolio placement.
             </p>
           </div>
 
@@ -67,9 +66,9 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-left">
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-600 font-bold">DIRECTORY</span>
               <div className="flex flex-col gap-2.5 text-xs">
-                <a href="#services" className="text-zinc-500 hover:text-white transition-colors">Services</a>
-                <a href="#process" className="text-zinc-500 hover:text-white transition-colors">Process</a>
-                <a href="#pricing" className="text-zinc-500 hover:text-white transition-colors">Pricing</a>
+                <a href="#" className="text-zinc-500 hover:text-white transition-colors">Home</a>
+                <a href="#why-us" className="text-zinc-500 hover:text-white transition-colors">About Us</a>
+                <a href="#services" className="text-zinc-500 hover:text-white transition-colors">Courses</a>
               </div>
             </div>
 
@@ -77,8 +76,8 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-left">
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-600 font-bold">RESOURCES</span>
               <div className="flex flex-col gap-2.5 text-xs">
-                <a href="#why-us" className="text-zinc-500 hover:text-white transition-colors">Why Us</a>
-                <a href="#contact" className="text-zinc-500 hover:text-white transition-colors">Book Audit</a>
+                <a href="#process" className="text-zinc-500 hover:text-white transition-colors">Journey</a>
+                <a href="#contact" className="text-zinc-500 hover:text-white transition-colors">Enrollment</a>
                 <a href="#" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
               </div>
             </div>
@@ -94,7 +93,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-white/[0.02] border border-white/5 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300"
-                      aria-label={`Visibility Pro Social Channel: ${soc.name}`}
+                      aria-label={`DesignPro Social Channel: ${soc.name}`}
                     >
                       {soc.svg}
                     </a>
@@ -112,7 +111,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-2">
           
           <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600">
-            © 2026 VISIBILITY PRO INC. METEORIC SCALING CODED.
+            © 2026 DESIGNPRO INC. COHORT PLACEMENT CODED.
           </span>
 
           {/* Magnetic scroll to top button */}

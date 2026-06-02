@@ -50,7 +50,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         });
 
         tlExit.to(progressLineRef.current, {
-          backgroundColor: '#00ffd1', // Hologram cyan
+          backgroundColor: '#64CEFB', // DesignPro Light Blue
           duration: 0.2,
         })
         .to([textRef.current, subtitleRef.current], {
@@ -75,13 +75,13 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 bg-[#030303] z-[99999] flex flex-col justify-between p-8 md:p-16 select-none"
+      className="fixed inset-0 bg-[#000000] z-[99999] flex flex-col justify-between p-8 md:p-16 select-none"
     >
       {/* Top Banner */}
       <div className="w-full flex justify-between items-center text-zinc-500 font-mono text-xs md:text-sm">
         <span className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-electric-blue animate-pulse" />
-          VISIBILITY PRO CORE SYSTEM v1.5
+          DESIGNPRO PLATFORM v1.0
         </span>
         <span>© 2026 ALL RIGHTS RESERVED</span>
       </div>
@@ -93,13 +93,13 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             ref={textRef}
             className="font-display font-black text-5xl md:text-8xl tracking-[0.15em] uppercase bg-gradient-to-r from-white via-zinc-400 to-white bg-clip-text text-transparent"
           >
-            VISIBILITY PRO
+            DESIGNPRO
           </h1>
           <p
             ref={subtitleRef}
             className="font-sans text-xs md:text-sm text-electric-blue tracking-[0.4em] uppercase mt-4"
           >
-            Engineering digital supremacy
+            Empowering next-gen product designers
           </p>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       {/* Cinematic Progress Bar */}
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4 font-mono">
         <div className="flex justify-between items-end text-xs text-zinc-400">
-          <span className="text-zinc-600 animate-pulse">INITIATING HOLO GRAPHICS ENGINE...</span>
+          <span className="text-zinc-600 animate-pulse">INITIALIZING DESIGN WORKSPACE...</span>
           <span className="text-2xl font-light text-electric-blue">
             {progress.toString().padStart(3, '0')}%
           </span>
@@ -115,7 +115,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         <div className="w-full h-[2px] bg-zinc-900 overflow-hidden relative">
           <div
             ref={progressLineRef}
-            className="h-full bg-gradient-to-r from-cyber-violet via-electric-blue to-hologram-cyan origin-left transition-all duration-75"
+            className="h-full bg-gradient-to-r from-cyber-violet via-electric-blue to-white origin-left transition-all duration-75"
             style={{ transform: `scaleX(${progress / 100})` }}
           />
         </div>

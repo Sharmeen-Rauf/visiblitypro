@@ -2,21 +2,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030303;
+  --background: #000000;
   --foreground: #f4f4f7;
   --mouse-x: 0px;
   --mouse-y: 0px;
 }
 
 @theme {
-  --color-electric-blue: #00f0ff;
-  --color-cyber-violet: #bd00ff;
-  --color-hologram-cyan: #00ffd1;
-  --color-dark-bg: #030303;
-  --color-luxury-gray: #0a0a0c;
-  --color-glass-card: rgba(8, 8, 12, 0.45);
-  --color-glass-border: rgba(255, 255, 255, 0.08);
-  --color-glass-glow: rgba(0, 240, 255, 0.15);
+  --color-electric-blue: #64CEFB;
+  --color-cyber-violet: #60a5fa;
+  --color-hologram-cyan: #e2e8f0;
+  --color-dark-bg: #000000;
+  --color-luxury-gray: #050507;
+  --color-glass-card: rgba(4, 4, 6, 0.5);
+  --color-glass-border: rgba(255, 255, 255, 0.06);
+  --color-glass-glow: rgba(100, 206, 251, 0.15);
 
   --font-sans: 'Inter', var(--font-geist-sans), sans-serif;
   --font-display: 'Outfit', var(--font-geist-mono), sans-serif;
@@ -31,14 +31,14 @@
     50% { transform: translateY(-12px) rotate(1.5deg); }
   }
   @keyframes glowPulse {
-    0%, 100% { opacity: 0.35; filter: drop-shadow(0 0 2px rgba(0, 240, 255, 0.2)); }
-    50% { opacity: 0.8; filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.5)); }
+    0%, 100% { opacity: 0.35; filter: drop-shadow(0 0 2px rgba(100, 206, 251, 0.2)); }
+    50% { opacity: 0.8; filter: drop-shadow(0 0 15px rgba(100, 206, 251, 0.5)); }
   }
 }
 
 /* Custom base styles */
 html, body {
-  background: #030303;
+  background: #000000;
   color: #f4f4f7;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
@@ -54,7 +54,7 @@ html, body {
   bottom: -50%;
   width: 200%;
   height: 200%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
   opacity: 0.2;
   pointer-events: none;
   z-index: 9999;
@@ -79,44 +79,44 @@ html, body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #030303;
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a1a24;
+  background: #111115;
   border-radius: 4px;
-  border: 2px solid #030303;
+  border: 2px solid #000000;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #bd00ff;
+  background: #64CEFB;
 }
 
 /* Selection style */
 ::selection {
-  background: #bd00ff;
-  color: #ffffff;
+  background: #64CEFB;
+  color: #000000;
 }
 
 /* Glassmorphism custom classes */
 .glass-panel {
-  background: rgba(8, 8, 12, 0.45);
+  background: rgba(4, 4, 6, 0.5);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .glass-panel-glow {
-  background: rgba(8, 8, 12, 0.55);
+  background: rgba(4, 4, 6, 0.6);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(0, 240, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(100, 206, 251, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(100, 206, 251, 0.05);
 }
 
 /* Spotlight card with mouse-follow glow border (Linear / Apple style) */
 .spotlight-card {
   position: relative;
-  background: rgba(8, 8, 12, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(4, 4, 6, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: border-color 0.4s ease;
 }
 
@@ -128,8 +128,8 @@ html, body {
   padding: 1.5px;
   background: radial-gradient(
     300px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
-    rgba(0, 240, 255, 0.25),
-    rgba(189, 0, 255, 0.15) 20%,
+    rgba(100, 206, 251, 0.25),
+    rgba(96, 165, 250, 0.15) 20%,
     transparent 50%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -146,18 +146,18 @@ html, body {
 }
 
 .spotlight-card:hover {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Animated animated background mesh */
 .bg-mesh-glow {
-  background-color: #030303;
+  background-color: #000000;
   background-image: 
-    radial-gradient(at 0% 0%, rgba(189, 0, 255, 0.12) 0px, transparent 55%),
-    radial-gradient(at 100% 0%, rgba(0, 240, 255, 0.12) 0px, transparent 55%),
-    radial-gradient(at 50% 50%, rgba(0, 0, 0, 0.95) 0px, transparent 100%),
-    radial-gradient(at 10% 80%, rgba(0, 255, 209, 0.06) 0px, transparent 40%),
-    radial-gradient(at 90% 90%, rgba(189, 0, 255, 0.08) 0px, transparent 40%);
+    radial-gradient(at 0% 0%, rgba(96, 165, 250, 0.08) 0px, transparent 55%),
+    radial-gradient(at 100% 0%, rgba(100, 206, 251, 0.08) 0px, transparent 55%),
+    radial-gradient(at 50% 50%, rgba(0, 0, 0, 0.98) 0px, transparent 100%),
+    radial-gradient(at 10% 80%, rgba(100, 206, 251, 0.04) 0px, transparent 40%),
+    radial-gradient(at 90% 90%, rgba(96, 165, 250, 0.05) 0px, transparent 40%);
   position: relative;
 }
 

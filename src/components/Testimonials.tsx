@@ -13,21 +13,21 @@ interface Testimonial {
 
 const testimonialsList: Testimonial[] = [
   {
-    quote: "Within 3 months, our organic leads doubled and our cost-per-click dropped by 40%. The technical precision of their work is remarkable.",
-    author: "Marcus Vance",
-    role: "VP of Growth, CoreLogic",
+    quote: "DesignPro completely transformed my career path. The live cohorts and advanced Figma design systems lessons gave me the confidence to transition into a Senior Product Designer role at Stripe.",
+    author: "Sarah Jenkins",
+    role: "Senior UX Designer, Stripe",
     rating: 5,
   },
   {
-    quote: "The Next.js 15 speed refactor boosted our Google Business local maps ranking to #1 across 14 major metros. Performance is simply unmatched.",
-    author: "Elena Rostova",
-    role: "CMO, Hyperion Systems",
+    quote: "The 1-on-1 mentorship was exceptional. My mentor critiqued my portfolio cases step-by-step and taught me how to present my problem-solving rationale, which landed me my job at Airbnb.",
+    author: "Arjun Mehta",
+    role: "Product Designer, Airbnb",
     rating: 5,
   },
   {
-    quote: "Visibility Pro did not just build our website—they engineered our entire revenue machine. Our inbound pipeline increased by 185% in 90 days.",
-    author: "Devon Chen",
-    role: "Co-Founder, Synthetix Corp",
+    quote: "A rigorous, comprehensive design program. The focus on metrics, research systems, and design leadership prepared me for a lead role far quicker than a university degree.",
+    author: "Sophia Dupont",
+    role: "Lead Product Designer, Figma",
     rating: 5,
   },
 ];
@@ -83,7 +83,7 @@ export default function Testimonials() {
   const activeTestimonial = testimonialsList[currentIndex];
 
   return (
-    <section className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#020205] overflow-hidden">
+    <section id="testimonials" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#000000] overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[55vw] h-[55vw] rounded-full bg-cyber-violet/5 blur-[170px] pointer-events-none -z-10 animate-pulse-slow" />
 
@@ -95,12 +95,12 @@ export default function Testimonials() {
             CLIENT INTEGRITY
           </span>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-none text-white uppercase">
-            SUREPROOF TESTIMONIALS.
+            ALUMNI SUCCESS STORIES.
           </h2>
         </div>
 
         {/* Testimonial Core Box */}
-        <div className="relative glass-panel rounded-[3rem] p-8 md:p-16 border border-white/5 shadow-2xl relative min-h-[380px] md:min-h-[300px] flex flex-col justify-between">
+        <div className="relative glass-panel rounded-[3rem] p-8 md:p-16 border border-white/5 shadow-2xl min-h-[380px] md:min-h-[300px] flex flex-col justify-between">
           
           {/* Glowing Ambient Quote Icon behind text */}
           <div className="absolute top-12 left-12 text-white/[0.015] pointer-events-none">
@@ -114,7 +114,7 @@ export default function Testimonials() {
               {[...Array(activeTestimonial.rating)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-4 h-4 text-hologram-cyan fill-hologram-cyan shadow-[0_0_10px_rgba(0,255,209,0.5)] animate-pulse"
+                  className="w-4 h-4 text-electric-blue fill-electric-blue shadow-[0_0_10px_rgba(100,206,251,0.5)] animate-pulse"
                   style={{ animationDelay: `${i * 0.1}s` }}
                 />
               ))}
@@ -161,9 +161,11 @@ export default function Testimonials() {
                     setDirection(idx > currentIndex ? 1 : -1);
                     setCurrentIndex(idx);
                   }}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    currentIndex === idx ? 'w-6 bg-electric-blue' : 'w-1.5 bg-zinc-800 hover:bg-zinc-600'
-                  }`}
+                  className="h-1.5 rounded-full transition-all duration-300 relative"
+                  style={{
+                    width: currentIndex === idx ? '24px' : '6px',
+                    backgroundColor: currentIndex === idx ? '#64CEFB' : '#27272a'
+                  }}
                   aria-label={`Go to slide ${idx + 1}`}
                 />
               ))}

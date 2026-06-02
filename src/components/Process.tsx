@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import { Compass, Milestone, Rocket, BarChart4 } from 'lucide-react';
 import Tilt from './Tilt';
 
@@ -16,31 +16,31 @@ interface Step {
 const stepsList: Step[] = [
   {
     num: "01",
-    title: "Discovery & Audit",
-    desc: "We extract raw data signatures from your digital presence, identifying indexing bottlenecks, semantic gaps, and high-revenue keywords.",
+    title: "Foundation Sprint",
+    desc: "Dive deep into design psychology, research methodologies, and heuristics. Understand mental models and define user journey architectures.",
     icon: Compass,
-    details: ["Technical crawl analysis", "Competitor matrix parsing", "Semantic intent mapping"],
+    details: ["Design psychology", "Research setup", "Heuristics audit"],
   },
   {
     num: "02",
-    title: "Strategy & Roadmap",
-    desc: "We architect a multi-quarter growth matrix, matching organic asset deployment with high-conversion PPC campaigns and map authority pipelines.",
+    title: "Advanced Practice",
+    desc: "Master high-fidelity prototyping, advanced auto layouts, and custom design systems inside Figma. Establish clear typographic scales and semantic colors.",
     icon: Milestone,
-    details: ["Content clusters schema", "Bidding algorithm presets", "Local maps schema planning"],
+    details: ["Advanced Figma layout", "Design system setup", "Motion principles"],
   },
   {
     num: "03",
-    title: "Execute & Optimise",
-    desc: "Our engineering squad deploys React structures, optimises codebases for high speed, and pushes authoritative backlinks and targeted PPC bids.",
+    title: "Capstone Collaboration",
+    desc: "Partner with other students and industry stakeholders to solve a real-world product brief. Build end-to-end user flows and execute developer handoff.",
     icon: Rocket,
-    details: ["Blazing core web vitals", "Ad copy automation systems", "Backlink network injection"],
+    details: ["Real product brief", "Developer handoff", "Interactive prototype"],
   },
   {
     num: "04",
-    title: "Report & Scale",
-    desc: "We stream detailed real-time performance analytics directly to you, pruning non-converting targets and doubling down on active revenue hubs.",
+    title: "Portfolio & Launch",
+    desc: "Craft high-conversion case studies that tell a story. Practice design presentation strategies, whiteboard challenges, and mock interviews with senior recruiters.",
     icon: BarChart4,
-    details: ["Real-time reporting dashboards", "Attribution path audits", "Ad budget reallocation"],
+    details: ["Case study storytelling", "Whiteboard practice", "Recruiter mock tests"],
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Process() {
   });
 
   return (
-    <section id="process" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#030303] overflow-hidden">
+    <section id="process" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 bg-[#000000] overflow-hidden">
       {/* Aurora Ambient Light */}
       <div className="absolute top-[50%] right-[0%] w-[45vw] h-[45vw] rounded-full bg-cyber-violet/5 blur-[150px] pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-[5%] w-[40vw] h-[40vw] rounded-full bg-electric-blue/5 blur-[150px] pointer-events-none -z-10" />
@@ -74,11 +74,11 @@ export default function Process() {
             OPERATIONAL PLAYBOOK
           </span>
           <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
-            GROWTH ARCHITECTURE <br />
-            <span className="bg-gradient-to-r from-cyber-violet via-electric-blue to-hologram-cyan bg-clip-text text-transparent">TIMELINE.</span>
+            STUDENT JOURNEY <br />
+            <span className="bg-gradient-to-r from-cyber-violet via-white to-electric-blue bg-clip-text text-transparent">TIMELINE.</span>
           </h2>
           <p className="text-sm md:text-base text-zinc-500 mt-2 leading-relaxed">
-            Four surgical phases engineered to take your company from its current baseline to organic dominance and scaled conversion heights.
+            Four surgical phases engineered to take your skills from zero to industry-ready product leader.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function Process() {
           {/* Active Filling Glowing Line */}
           <motion.div
             style={{ scaleY: scaleYSpring }}
-            className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-cyber-violet via-electric-blue to-hologram-cyan origin-top -translate-x-1/2 -z-10 shadow-[0_0_12px_rgba(0,240,255,0.8)]"
+            className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-cyber-violet via-electric-blue to-white origin-top -translate-x-1/2 -z-10 shadow-[0_0_12px_rgba(100,206,251,0.8)]"
           />
 
           {/* Steps Grid */}
@@ -109,14 +109,14 @@ export default function Process() {
                 >
                   
                   {/* Timeline Anchor Pin (glowing circular node) */}
-                  <div className="absolute left-[20px] md:left-1/2 top-[24px] w-4 h-4 rounded-full bg-[#030303] border-2 border-zinc-700 -translate-x-1/2 flex items-center justify-center z-20 group">
+                  <div className="absolute left-[20px] md:left-1/2 top-[24px] w-4 h-4 rounded-full bg-[#000000] border-2 border-zinc-700 -translate-x-1/2 flex items-center justify-center z-20 group">
                     <motion.div
                       initial={{ scale: 0.5, opacity: 0.5 }}
                       whileInView={{ scale: 1.2, opacity: 1 }}
                       viewport={{ once: true, margin: "-120px" }}
-                      className="w-2.5 h-2.5 rounded-full bg-electric-blue shadow-[0_0_8px_rgba(0,240,255,0.8)]"
+                      className="w-2.5 h-2.5 rounded-full bg-electric-blue shadow-[0_0_8px_rgba(100,206,251,0.8)]"
                       style={{
-                        backgroundColor: idx % 3 === 0 ? '#bd00ff' : idx % 3 === 1 ? '#00f0ff' : '#00ffd1'
+                        backgroundColor: idx % 3 === 0 ? '#60a5fa' : idx % 3 === 1 ? '#64CEFB' : '#ffffff'
                       }}
                     />
                   </div>
@@ -158,7 +158,7 @@ export default function Process() {
                           <div className="flex flex-col gap-2 mt-6 pt-6 border-t border-white/[0.05]">
                             {step.details.map((detail, dIdx) => (
                               <div key={dIdx} className="flex items-center gap-2.5">
-                                <span className="w-1.5 h-1.5 rounded-full bg-hologram-cyan" />
+                                <span className="w-1.5 h-1.5 rounded-full bg-electric-blue" />
                                 <span className="text-xs text-zinc-500 group-hover:text-zinc-400 transition-colors duration-500 font-mono uppercase">
                                   {detail}
                                 </span>

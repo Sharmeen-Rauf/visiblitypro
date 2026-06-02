@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Code2, DollarSign, Share2, MapPin, ArrowUpRight } from 'lucide-react';
+import { Search, Code2, Palette, Cpu, Briefcase, ArrowUpRight } from 'lucide-react';
 import Tilt from './Tilt';
 
 interface Service {
@@ -17,42 +17,42 @@ interface Service {
 const servicesList: Service[] = [
   {
     icon: Search,
-    title: "Search Engine Optimisation",
-    desc: "Dominate search layouts using semantic crawling pipelines, contextual authority structures, and hyper-dense intent-targeted keyword clusters.",
-    tags: ["Semantic SEO", "Domain Authority", "Core Web Vitals"],
-    color: "rgba(0, 240, 255, 0.15)", // Electric blue
+    title: "UX Research & Strategy",
+    desc: "Master the science of user behaviors. Build robust research models, design interactive testing protocols, and parse quantitative telemetry.",
+    tags: ["User Heuristics", "Usability Testing", "Mental Models"],
+    color: "rgba(100, 206, 251, 0.15)", // Light blue
     colSpan: "lg:col-span-6",
   },
   {
     icon: Code2,
-    title: "Website Development",
-    desc: "Deploy blazing-fast, secure digital products built on Next.js 15, dynamic React Server Components, and modular WebGL canvases.",
-    tags: ["Next.js 15", "Headless CMS", "Interactive 3D"],
-    color: "rgba(189, 0, 255, 0.15)", // Cyber violet
+    title: "Interaction Design",
+    desc: "Design interactive systems that feel organic. Build high-fidelity prototypes, master dynamic components, and refine transition timings.",
+    tags: ["Micro-interactions", "Motion Curves", "Figma Workflows"],
+    color: "rgba(96, 165, 250, 0.15)", // Blue glow
     colSpan: "lg:col-span-6",
   },
   {
-    icon: DollarSign,
-    title: "Pay-Per-Click Ads",
-    desc: "Maximize acquisition curves with machine-learning bid scaling, granular multi-channel funnels, and optimized landing-page hooks.",
-    tags: ["Google Search & PMax", "Meta Algorithmic Scaling", "CRO Funnels"],
-    color: "rgba(0, 255, 209, 0.12)", // Hologram cyan
+    icon: Palette,
+    title: "Visual Design Systems",
+    desc: "Construct scalable design systems. Establish typographic hierarchy, manage semantic colors, and build atomic components.",
+    tags: ["Typography Scales", "UI Token Specs", "Grid Architecture"],
+    color: "rgba(100, 206, 251, 0.12)",
     colSpan: "lg:col-span-4",
   },
   {
-    icon: Share2,
-    title: "Social Media Marketing",
-    desc: "Architect viral inbound traffic networks using aesthetic visual stories, community feedback mechanics, and scalable kinetic content loops.",
-    tags: ["Community Scaling", "Kinetic Design", "Inbound Virality"],
-    color: "rgba(255, 0, 128, 0.12)", // Magenta pink
+    icon: Cpu,
+    title: "Product Management & AI",
+    desc: "Bridge the gap between design and delivery. Leverage generative AI tools, write markdown specs, and direct developer sprints.",
+    tags: ["Generative UI", "Design Handoff", "Agile Sprints"],
+    color: "rgba(96, 165, 250, 0.12)",
     colSpan: "lg:col-span-4",
   },
   {
-    icon: MapPin,
-    title: "Google Business Profile",
-    desc: "Command your immediate metropolitan radius through map schema architecture, semantic review pipelines, and local citations.",
-    tags: ["GBP Authority", "Local Citation Building", "Schema Map Injections"],
-    color: "rgba(255, 170, 0, 0.12)", // Neon Gold
+    icon: Briefcase,
+    title: "Career Prep & Portfolio",
+    desc: "Structure high-conversion portfolios. Write compelling problem-solution narratives, practice interactive presentations, and clear whiteboard challenges.",
+    tags: ["Case Studies", "Mock Interviews", "Placement Audits"],
+    color: "rgba(100, 206, 251, 0.12)",
     colSpan: "lg:col-span-4",
   },
 ];
@@ -136,7 +136,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
 
 export default function Services() {
   return (
-    <section id="services" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 overflow-hidden bg-[#020205]">
+    <section id="services" className="relative w-full py-12 md:py-16 px-4 md:px-8 xl:px-16 overflow-hidden bg-[#000000]">
       {/* Background ambient noise glow to separate sections */}
       <div className="absolute top-[30%] left-[50%] -translate-x-1/2 w-[60vw] h-[60vw] rounded-full bg-electric-blue/4 blur-[160px] pointer-events-none -z-10" />
 
@@ -150,11 +150,11 @@ export default function Services() {
             </span>
             <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
               HIGH-PERFORMANCE <br />
-              <span className="bg-gradient-to-r from-electric-blue via-hologram-cyan to-cyber-violet bg-clip-text text-transparent">SERVICES.</span>
+              <span className="bg-gradient-to-r from-electric-blue via-white to-cyber-violet bg-clip-text text-transparent">CURRICULUM.</span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-md text-left leading-relaxed">
-            We do not execute basic marketing. We design full-funnel digital supremacy structures that combine AI insights, lightning web performance, and aggressive SEO metrics.
+            We do not teach basic software tutorials. We train product designers to think like product leaders, blending visual execution, research systems, and business strategy.
           </p>
         </div>
 
