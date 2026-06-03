@@ -79,7 +79,7 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="btn-liquid-glass-featured px-6 py-3 md:px-8 md:py-4 gap-2 text-sm font-semibold justify-center items-center shadow-2xl"
+              className="group relative inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm font-semibold bg-black text-white hover:bg-zinc-900 border border-white/10 hover:border-white/20 transition-all duration-300 shadow-2xl"
             >
               <span>Apply for Next Enrollment</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />

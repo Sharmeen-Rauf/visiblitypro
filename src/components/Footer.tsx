@@ -118,7 +118,7 @@ export default function Footer() {
           <Magnetic strength={0.3}>
             <button
               onClick={handleScrollTop}
-              className="btn-liquid-glass w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white"
+              className="group w-10 h-10 rounded-full bg-white/[0.02] border border-white/5 flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/20 hover:bg-white/[0.05] transition-all duration-300 cursor-pointer"
               aria-label="Back to Top"
             >
               <ArrowUp className="w-4 h-4 transition-transform duration-500 group-hover:-translate-y-0.5" />

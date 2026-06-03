@@ -164,18 +164,19 @@ export default function Contact() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full py-4 text-xs font-bold uppercase tracking-wider mt-2 btn-liquid-glass-featured"
+                        className="w-full relative group inline-flex items-center justify-center gap-2 py-4 rounded-2xl text-xs font-bold uppercase tracking-wider bg-white text-black transition-all duration-300 cursor-pointer overflow-hidden shadow-[0_4px_25px_rgba(255,255,255,0.05)] hover:shadow-[0_4px_35px_rgba(100,206,251,0.3)] mt-2"
                       >
                         {isSubmitting ? (
-                          <span className="flex items-center justify-center gap-2 animate-pulse">
+                          <span className="flex items-center gap-2 animate-pulse">
                             Syncing with DesignPro Admission API...
                           </span>
                         ) : (
-                          <span className="flex items-center justify-center gap-1.5">
+                          <span className="relative z-10 flex items-center gap-1.5">
                             Submit Application
                             <Send className="w-3.5 h-3.5" />
                           </span>
                         )}
+                        <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10" />
                       </button>
                     </motion.form>
                   ) : (
@@ -197,7 +198,7 @@ export default function Contact() {
                       </p>
                       <button
                         onClick={() => setIsSubmitted(false)}
-                        className="btn-liquid-glass mt-8 px-6 py-3 text-[10px] font-mono uppercase tracking-widest"
+                        className="mt-8 font-mono text-[10px] text-zinc-500 hover:text-white uppercase tracking-widest underline transition-colors"
                       >
                         Reset Application Form
                       </button>
@@ -240,12 +241,13 @@ export default function Contact() {
             <Magnetic strength={0.25}>
               <a
                 href="#contact"
-                className="w-full sm:w-auto px-10 py-5 text-xs font-bold uppercase tracking-widest btn-liquid-glass-featured"
+                className="w-full sm:w-auto relative group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest bg-white text-black overflow-hidden shadow-[0_4px_30px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_40px_rgba(100,206,251,0.4)] transition-all duration-300"
               >
-                <span className="flex items-center justify-center gap-2">
+                <span className="relative z-10 flex items-center gap-2">
                   Apply for Admission
                   <PhoneCall className="w-4 h-4" />
                 </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10" />
               </a>
             </Magnetic>
 
@@ -254,12 +256,10 @@ export default function Contact() {
                 href="https://wa.me/923146773542?text=Hello%20DesignPro,%20I%27d%20like%20to%20ask%20a%20few%20questions%20about%20your%20upcoming%20program."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-10 py-5 text-xs font-bold uppercase tracking-widest btn-liquid-glass"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full text-xs font-bold uppercase tracking-widest text-white border border-white/10 bg-white/[0.02] backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.05]"
               >
-                <span className="flex items-center justify-center gap-3">
-                  <span>WhatsApp Us</span>
-                  <MessageSquare className="w-4 h-4 text-electric-blue animate-pulse" />
-                </span>
+                <span>WhatsApp Us</span>
+                <MessageSquare className="w-4 h-4 text-electric-blue animate-pulse" />
               </a>
             </Magnetic>
 

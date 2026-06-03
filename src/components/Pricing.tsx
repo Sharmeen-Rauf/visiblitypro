@@ -175,14 +175,19 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
               href={`https://wa.me/923146773542?text=Hello%20DesignPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20program%20(${pkg.price}).`}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-full py-4 text-xs font-bold uppercase tracking-wider ${
-                pkg.featured ? 'btn-liquid-glass-featured' : 'btn-liquid-glass'
+              className={`w-full relative group inline-flex items-center justify-center gap-2 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
+                pkg.featured
+                  ? 'bg-white text-black shadow-[0_4px_25px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_35px_rgba(100,206,251,0.4)]'
+                  : 'bg-white/[0.03] text-white border border-white/5 hover:bg-white hover:text-black hover:border-transparent'
               }`}
             >
-              <span className="flex items-center justify-center gap-1.5">
+              <span className="relative z-10 flex items-center gap-1.5">
                 {pkg.cta}
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
               </span>
+              {pkg.featured && (
+                <div className="absolute inset-0 bg-gradient-to-r from-electric-blue to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10 rounded-full" />
+              )}
             </a>
           </div>
         </div>
