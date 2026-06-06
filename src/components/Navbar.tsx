@@ -6,13 +6,13 @@ import { Menu, X, ArrowUpRight } from 'lucide-react';
 import Magnetic from './Magnetic';
 
 const navItems = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#why-us' },
-  { name: 'Services', href: '#services' },
-  { name: 'Case Studies', href: '#process' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'Contact us', href: '#contact', icon: ArrowUpRight },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/#why-us' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Case Studies', href: '/#process' },
+  { name: 'Testimonials', href: '/#testimonials' },
+  { name: 'Blog', href: '/#blog' },
+  { name: 'Contact us', href: '/#contact', icon: ArrowUpRight },
 ];
 
 export default function Navbar() {

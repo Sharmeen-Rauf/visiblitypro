@@ -66,9 +66,9 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-left">
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-600 font-bold">DIRECTORY</span>
               <div className="flex flex-col gap-2.5 text-xs">
-                <a href="#" className="text-zinc-500 hover:text-white transition-colors">Home</a>
-                <a href="#why-us" className="text-zinc-500 hover:text-white transition-colors">About Us</a>
-                <a href="#services" className="text-zinc-500 hover:text-white transition-colors">Services</a>
+                <a href="/" className="text-zinc-500 hover:text-white transition-colors">Home</a>
+                <a href="/#why-us" className="text-zinc-500 hover:text-white transition-colors">About Us</a>
+                <a href="/#services" className="text-zinc-500 hover:text-white transition-colors">Services</a>
               </div>
             </div>
 
@@ -76,8 +76,8 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-left">
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-600 font-bold">RESOURCES</span>
               <div className="flex flex-col gap-2.5 text-xs">
-                <a href="#process" className="text-zinc-500 hover:text-white transition-colors">Journey</a>
-                <a href="#contact" className="text-zinc-500 hover:text-white transition-colors">Contact</a>
+                <a href="/#process" className="text-zinc-500 hover:text-white transition-colors">Journey</a>
+                <a href="/#contact" className="text-zinc-500 hover:text-white transition-colors">Contact</a>
                 <a href="#" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
               </div>
             </div>
