@@ -8,8 +8,8 @@ import Magnetic from './Magnetic';
 const navItems = [
   { name: 'Home', href: '#' },
   { name: 'About Us', href: '#why-us' },
-  { name: 'Courses', href: '#services' },
-  { name: 'Instructors', href: '#process' },
+  { name: 'Services', href: '#services' },
+  { name: 'Case Studies', href: '#process' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Blog', href: '#blog' },
   { name: 'Contact us', href: '#contact', icon: ArrowUpRight },
@@ -53,7 +53,7 @@ export default function Navbar() {
                 <div className="w-2 h-2 rounded-full bg-white" />
               </div>
               <span className="font-display font-black text-lg md:text-xl tracking-wider text-white uppercase">
-                DesignPro
+                VIZIBILITYPRO
               </span>
             </a>
           </Magnetic>

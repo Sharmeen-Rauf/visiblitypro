@@ -50,7 +50,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         });
 
         tlExit.to(progressLineRef.current, {
-          backgroundColor: '#64CEFB', // DesignPro Light Blue
+          backgroundColor: '#64CEFB', // Light Blue
           duration: 0.2,
         })
         .to([textRef.current, subtitleRef.current], {
@@ -81,7 +81,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       <div className="w-full flex justify-between items-center text-zinc-500 font-mono text-xs md:text-sm">
         <span className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-electric-blue animate-pulse" />
-          DESIGNPRO PLATFORM v1.0
+          VIZIBILITYPRO PLATFORM v1.5
         </span>
         <span>© 2026 ALL RIGHTS RESERVED</span>
       </div>
@@ -93,13 +93,13 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             ref={textRef}
             className="font-display font-black text-5xl md:text-8xl tracking-[0.15em] uppercase bg-gradient-to-r from-white via-zinc-400 to-white bg-clip-text text-transparent"
           >
-            DESIGNPRO
+            VIZIBILITYPRO
           </h1>
           <p
             ref={subtitleRef}
             className="font-sans text-xs md:text-sm text-electric-blue tracking-[0.4em] uppercase mt-4"
           >
-            Empowering next-gen product designers
+            Engineering digital supremacy
           </p>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       {/* Cinematic Progress Bar */}
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4 font-mono">
         <div className="flex justify-between items-end text-xs text-zinc-400">
-          <span className="text-zinc-600 animate-pulse">INITIALIZING DESIGN WORKSPACE...</span>
+          <span className="text-zinc-600 animate-pulse">INITIALIZING HOLO GRAPHICS ENGINE...</span>
           <span className="text-2xl font-light text-electric-blue">
             {progress.toString().padStart(3, '0')}%
           </span>

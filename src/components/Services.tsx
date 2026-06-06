@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Code2, Palette, Cpu, Briefcase, ArrowUpRight } from 'lucide-react';
+import { Search, DollarSign, Palette, Megaphone, Briefcase, ArrowUpRight } from 'lucide-react';
 import Tilt from './Tilt';
 
 interface Service {
@@ -17,41 +17,41 @@ interface Service {
 const servicesList: Service[] = [
   {
     icon: Search,
-    title: "UX Research & Strategy",
-    desc: "Master the science of user behaviors. Build robust research models, design interactive testing protocols, and parse quantitative telemetry.",
-    tags: ["User Heuristics", "Usability Testing", "Mental Models"],
+    title: "SEO & Organic Search",
+    desc: "Master the search engine rankings. Build robust content models, optimize technical site architecture, track keyword intent, and scale high-authority backlink profiles to capture evergreen organic traffic.",
+    tags: ["KEYWORD INTENT", "TECHNICAL SEO", "LINK BUILDING"],
     color: "rgba(100, 206, 251, 0.15)", // Light blue
     colSpan: "lg:col-span-6",
   },
   {
-    icon: Code2,
-    title: "Interaction Design",
-    desc: "Design interactive systems that feel organic. Build high-fidelity prototypes, master dynamic components, and refine transition timings.",
-    tags: ["Micro-interactions", "Motion Curves", "Figma Workflows"],
+    icon: DollarSign,
+    title: "Paid Ads & PPC Strategy",
+    desc: "Deploy advertising capital with absolute precision. Launch high-ROI campaigns across Google, Meta, and LinkedIn designed to intercept ready-to-buy prospects and lower customer acquisition costs.",
+    tags: ["ROAS OPTIMIZATION", "RETARGETING", "AUDIENCE FUNNELS"],
     color: "rgba(96, 165, 250, 0.15)", // Blue glow
     colSpan: "lg:col-span-6",
   },
   {
     icon: Palette,
-    title: "Visual Design Systems",
-    desc: "Construct scalable design systems. Establish typographic hierarchy, manage semantic colors, and build atomic components.",
-    tags: ["Typography Scales", "UI Token Specs", "Grid Architecture"],
+    title: "High-Converting Web Design",
+    desc: "Transform cold traffic into active pipeline. Build lightning-fast, beautifully responsive landing pages and interfaces engineered around proven user behavior and clear calls-to-action.",
+    tags: ["UX ARCHITECTURE", "A/B TESTING", "LANDING PAGES"],
     color: "rgba(100, 206, 251, 0.12)",
     colSpan: "lg:col-span-4",
   },
   {
-    icon: Cpu,
-    title: "Product Management & AI",
-    desc: "Bridge the gap between design and delivery. Leverage generative AI tools, write markdown specs, and direct developer sprints.",
-    tags: ["Generative UI", "Design Handoff", "Agile Sprints"],
+    icon: Megaphone,
+    title: "Social Strategy & Content",
+    desc: "Bridge the gap between a silent brand and market dominance. Produce elite short-form video, thought leadership content, and multi-channel creative assets that demand attention.",
+    tags: ["CREATIVE DIRECTION", "ENGAGEMENT", "CONTENT ENGINES"],
     color: "rgba(96, 165, 250, 0.12)",
     colSpan: "lg:col-span-4",
   },
   {
     icon: Briefcase,
-    title: "Career Prep & Portfolio",
-    desc: "Structure high-conversion portfolios. Write compelling problem-solution narratives, practice interactive presentations, and clear whiteboard challenges.",
-    tags: ["Case Studies", "Mock Interviews", "Placement Audits"],
+    title: "Data Intelligence & Scale",
+    desc: "Eliminate the guesswork from your marketing budget. Implement clean server-side tracking, customized attribution dashboards, and granular weekly audits to ensure continuous profit growth.",
+    tags: ["ROI ATTRIBUTION", "DATA DASHBOARDS", "WEEKLY AUDITS"],
     color: "rgba(100, 206, 251, 0.12)",
     colSpan: "lg:col-span-4",
   },
@@ -112,7 +112,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             <h3 className="font-display font-black text-2xl text-white tracking-wide group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-zinc-300 group-hover:to-zinc-500 group-hover:bg-clip-text transition-colors duration-500">
               {service.title}
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed mt-3.5 group-hover:text-zinc-300 transition-colors duration-500">
+            <p className="text-sm text-zinc-400 leading-relaxed mt-3.5 group-hover:text-zinc-300 transition-colors duration-500 font-sans">
               {service.desc}
             </p>
           </div>
@@ -146,15 +146,15 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex flex-col gap-4 text-left max-w-xl">
             <span className="text-xs font-mono font-bold tracking-[0.3em] text-electric-blue uppercase">
-              EXPERTISE PATHWAYS
+              EXPERTISE & SERVICES
             </span>
             <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
               HIGH-PERFORMANCE <br />
-              <span className="bg-gradient-to-r from-electric-blue via-white to-cyber-violet bg-clip-text text-transparent">CURRICULUM.</span>
+              <span className="bg-gradient-to-r from-white via-white to-electric-blue bg-clip-text text-transparent">GROWTH.</span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-md text-left leading-relaxed">
-            We do not teach basic software tutorials. We train product designers to think like product leaders, blending visual execution, research systems, and business strategy.
+            We do not rely on generic marketing templates. We build custom growth frameworks for businesses looking to scale, blending data-driven SEO, performance ad systems, and high-conversion web experiences.
           </p>
         </div>
 

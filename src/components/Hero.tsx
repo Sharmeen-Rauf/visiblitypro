@@ -37,12 +37,12 @@ export default function Hero() {
         >
           <div className="text-left">
             <p className="text-white/80 text-sm md:text-base max-w-md leading-relaxed">
-              We deliver transformative programs that empower emerging product designers with cutting-edge expertise and vision to thrive globally.
+              We deliver high-impact digital marketing strategies that empower ambitious brands with cutting-edge visibility and data-driven growth to thrive globally.
             </p>
           </div>
           <div className="text-left lg:text-right">
             <p className="text-white/80 text-sm md:text-base font-medium tracking-wide">
-              8000+ Talented Designers Launched !
+              500+ Brands Scaled Globally !
             </p>
           </div>
         </motion.div>
@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="uppercase text-white/80 text-xs md:text-sm tracking-tight font-semibold mb-3 md:mb-5"
           >
-            Seats for Next Program Opening Soon
+            STRATEGIC DIGITAL MARKETING FOR GROWING ENTERPRISES
           </motion.span>
 
           {/* Main Heading */}
@@ -66,8 +66,8 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
             className="font-sans font-medium text-5xl sm:text-7xl md:text-8xl xl:text-9xl leading-[0.85] tracking-tighter text-white flex flex-col items-center"
           >
-            <span>Become</span>
-            <ShinyText text="Product Leader." className="mt-1 md:mt-3 font-black" />
+            <span>Make Your</span>
+            <ShinyText text="Business Visible." className="mt-1 md:mt-3 font-black" />
           </motion.h1>
 
           {/* CTA Button */}
@@ -81,7 +81,7 @@ export default function Hero() {
               href="#contact"
               className="group relative inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm font-semibold bg-black text-white hover:bg-zinc-900 border border-white/10 hover:border-white/20 transition-all duration-300 shadow-2xl"
             >
-              <span>Apply for Next Enrollment</span>
+              <span>Scale Your Business Now</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
             </a>
           </motion.div>

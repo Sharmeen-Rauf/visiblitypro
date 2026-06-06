@@ -52,10 +52,10 @@ export default function Footer() {
           {/* Logo & Slogan Column */}
           <div className="flex flex-col gap-4 text-left max-w-sm">
             <span className="font-display font-black text-2xl tracking-wider text-white uppercase">
-              DESIGNPRO<span className="text-electric-blue">.</span>
+              VIZIBILITYPRO<span className="text-electric-blue">.</span>
             </span>
             <p className="text-xs text-zinc-500 leading-relaxed font-mono uppercase tracking-widest mt-1">
-              Empowering next-gen product designers. Intensive design cohorts, active industry mentorship, and portfolio placement.
+              Engineering digital supremacy. High-impact digital marketing strategies, performance ad systems, and conversion architectures.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
               <div className="flex flex-col gap-2.5 text-xs">
                 <a href="#" className="text-zinc-500 hover:text-white transition-colors">Home</a>
                 <a href="#why-us" className="text-zinc-500 hover:text-white transition-colors">About Us</a>
-                <a href="#services" className="text-zinc-500 hover:text-white transition-colors">Courses</a>
+                <a href="#services" className="text-zinc-500 hover:text-white transition-colors">Services</a>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function Footer() {
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-600 font-bold">RESOURCES</span>
               <div className="flex flex-col gap-2.5 text-xs">
                 <a href="#process" className="text-zinc-500 hover:text-white transition-colors">Journey</a>
-                <a href="#contact" className="text-zinc-500 hover:text-white transition-colors">Enrollment</a>
+                <a href="#contact" className="text-zinc-500 hover:text-white transition-colors">Contact</a>
                 <a href="#" className="text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-white/[0.02] border border-white/5 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300"
-                      aria-label={`DesignPro Social Channel: ${soc.name}`}
+                      aria-label={`VizibilityPro Social Channel: ${soc.name}`}
                     >
                       {soc.svg}
                     </a>
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-2">
           
           <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600">
-            © 2026 DESIGNPRO INC. COHORT PLACEMENT CODED.
+            © 2026 VIZIBILITYPRO INC. METEORIC SCALING CODED.
           </span>
 
           {/* Magnetic scroll to top button */}
