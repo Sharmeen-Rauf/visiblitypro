@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Compass, Milestone, Rocket, BarChart4 } from 'lucide-react';
+import { Compass, Target, Rocket, BarChart4 } from 'lucide-react';
 import Tilt from './Tilt';
 
 interface Step {
@@ -16,31 +16,31 @@ interface Step {
 const stepsList: Step[] = [
   {
     num: "01",
-    title: "Foundation Sprint",
-    desc: "Dive deep into design psychology, research methodologies, and heuristics. Understand mental models and define user journey architectures.",
+    title: "ONBOARDING & DEEP AUDIT",
+    desc: "Dive deep into your existing data, conversion metrics, and competitor frameworks. We break down your historical performance data to uncover hidden bottlenecks and map out custom audience growth architectures.",
     icon: Compass,
-    details: ["Design psychology", "Research setup", "Heuristics audit"],
+    details: ["COMPETITOR INTELLIGENCE", "CONVERSION AUDITS", "TRAFFIC BOTTLENECK ANALYSIS"],
   },
   {
     num: "02",
-    title: "Advanced Practice",
-    desc: "Master high-fidelity prototyping, advanced auto layouts, and custom design systems inside Figma. Establish clear typographic scales and semantic colors.",
-    icon: Milestone,
-    details: ["Advanced Figma layout", "Design system setup", "Motion principles"],
+    title: "ARCHITECTURE & INFRASTRUCTURE",
+    desc: "Build high-performance landing pages, engineer backend SEO technical foundations, and deploy server-side tracking protocols. We align every pixel and tracking script to ensure complete data accuracy before scaling.",
+    icon: Target,
+    details: ["PIXEL & TRACKING DEPLOYMENT", "UX/UI LANDING PAGE OPTIMIZATION", "CORE WEB VITALS BOOST"],
   },
   {
     num: "03",
-    title: "Capstone Collaboration",
-    desc: "Partner with other students and industry stakeholders to solve a real-world product brief. Build end-to-end user flows and execute developer handoff.",
+    title: "CAMPAIGN LAUNCH & VELOCITY",
+    desc: "Activate targeted multi-channel ad campaigns and high-intent SEO content engines to intercept your best prospects. We manage, test, and execute rapid creative changes to aggressively scale active pipeline revenue.",
     icon: Rocket,
-    details: ["Real product brief", "Developer handoff", "Interactive prototype"],
+    details: ["HIGH-INTENT INTERCEPTION", "MULTI-CHANNEL AD SPEND SPRINT", "CREATIVE REFACTORING"],
   },
   {
     num: "04",
-    title: "Portfolio & Launch",
-    desc: "Craft high-conversion case studies that tell a story. Practice design presentation strategies, whiteboard challenges, and mock interviews with senior recruiters.",
+    title: "ATTRIBUTION & DOMINANCE",
+    desc: "Analyze end-to-end attribution models to double down on winning channels. We provide granular bi-weekly audits and maximize conversion rates to systematically defend and grow your market share.",
     icon: BarChart4,
-    details: ["Case study storytelling", "Whiteboard practice", "Recruiter mock tests"],
+    details: ["ROI & ATTRIBUTION MODELLING", "BI-WEEKLY DATA LEAN AUDITS", "REVENUE MULTIPLIER TUNING"],
   },
 ];
 
@@ -70,15 +70,15 @@ export default function Process() {
         
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center max-w-2xl mx-auto mb-20 md:mb-28">
-          <span className="text-xs font-mono font-bold tracking-[0.3em] text-cyber-violet uppercase">
+          <span className="text-xs font-mono font-bold tracking-[0.3em] text-electric-blue uppercase">
             OPERATIONAL PLAYBOOK
           </span>
           <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
-            STUDENT JOURNEY <br />
-            <span className="bg-gradient-to-r from-cyber-violet via-white to-electric-blue bg-clip-text text-transparent">TIMELINE.</span>
+            CLIENT GROWTH <br />
+            <span className="text-electric-blue drop-shadow-[0_0_15px_rgba(100,206,251,0.4)]">TIMELINE.</span>
           </h2>
-          <p className="text-sm md:text-base text-zinc-500 mt-2 leading-relaxed">
-            Four surgical phases engineered to take your skills from zero to industry-ready product leader.
+          <p className="text-sm md:text-base text-zinc-500 mt-2 leading-relaxed font-sans">
+            Four tactical phases engineered to take your brand from market obscurity to an industry-leading digital powerhouse.
           </p>
         </div>
 
@@ -150,15 +150,15 @@ export default function Process() {
                             {step.title}
                           </h3>
                           
-                          <p className="text-sm text-zinc-400 leading-relaxed mt-3">
+                          <p className="text-sm text-zinc-400 leading-relaxed mt-3 font-sans">
                             {step.desc}
                           </p>
 
                           {/* Bullet Checklist */}
-                          <div className="flex flex-col gap-2 mt-6 pt-6 border-t border-white/[0.05]">
+                          <div className="flex flex-col gap-2.5 mt-6 pt-6 border-t border-white/[0.05]">
                             {step.details.map((detail, dIdx) => (
-                              <div key={dIdx} className="flex items-center gap-2.5">
-                                <span className="w-1.5 h-1.5 rounded-full bg-electric-blue" />
+                              <div key={dIdx} className="flex items-center gap-2">
+                                <span className="text-xs text-electric-blue">🔹</span>
                                 <span className="text-xs text-zinc-500 group-hover:text-zinc-400 transition-colors duration-500 font-mono uppercase">
                                   {detail}
                                 </span>

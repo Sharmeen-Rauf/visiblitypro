@@ -13,21 +13,21 @@ interface Testimonial {
 
 const testimonialsList: Testimonial[] = [
   {
-    quote: "DesignPro completely transformed my career path. The live cohorts and advanced Figma design systems lessons gave me the confidence to transition into a Senior Product Designer role at Stripe.",
-    author: "Sarah Jenkins",
-    role: "Senior UX Designer, Stripe",
+    quote: "An absolute game-changer for our lead acquisition pipeline. VizibilityPro refactored our entire paid ad strategy and optimized our landing pages, helping us hit a 4.2x ROAS and double our revenue far faster than any internal hiring strategy could.",
+    author: "Marcus Sterling",
+    role: "FOUNDER & CEO, VORTEX FINTECH",
     rating: 5,
   },
   {
-    quote: "The 1-on-1 mentorship was exceptional. My mentor critiqued my portfolio cases step-by-step and taught me how to present my problem-solving rationale, which landed me my job at Airbnb.",
-    author: "Arjun Mehta",
-    role: "Product Designer, Airbnb",
+    quote: "Their technical SEO blueprint and entity schema mapping boosted our inbound organic pipelines to #1 rankings across our core product terms. Traffic is up 210% and leads are up 140%.",
+    author: "Elena Vance",
+    role: "VP OF GROWTH, CORELOGIC",
     rating: 5,
   },
   {
-    quote: "A rigorous, comprehensive design program. The focus on metrics, research systems, and design leadership prepared me for a lead role far quicker than a university degree.",
-    author: "Sophia Dupont",
-    role: "Lead Product Designer, Figma",
+    quote: "They engineered our entire conversion flow. From lightning-fast landing page builds to custom server-side tracking, we finally have complete data accuracy and scaled our Meta ad spend by 300%.",
+    author: "Arjun Mercer",
+    role: "CMO, HYPERION SYSTEMS",
     rating: 5,
   },
 ];
@@ -91,11 +91,11 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="flex flex-col gap-3 text-center mb-16 md:mb-24">
-          <span className="text-xs font-mono font-bold tracking-[0.3em] text-cyber-violet uppercase">
+          <span className="text-xs font-mono font-bold tracking-[0.3em] text-electric-blue uppercase">
             CLIENT INTEGRITY
           </span>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-none text-white uppercase">
-            ALUMNI SUCCESS STORIES.
+            PARTNER SUCCESS STORIES.
           </h2>
         </div>
 
@@ -132,7 +132,7 @@ export default function Testimonials() {
                   exit="exit"
                   className="w-full flex flex-col"
                 >
-                  <p className="font-display font-medium text-lg md:text-2xl text-white leading-relaxed tracking-wide italic">
+                  <p className="font-display font-medium text-lg md:text-2xl text-white leading-relaxed tracking-wide italic font-sans">
                     "{activeTestimonial.quote}"
                   </p>
                   

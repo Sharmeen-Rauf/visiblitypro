@@ -477,7 +477,7 @@ export default function ServicesPage() {
           </span>
           <h1 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
             SERVICE <br className="md:hidden" />
-            <span className="bg-gradient-to-r from-electric-blue via-white to-cyber-violet bg-clip-text text-transparent">PACKAGES.</span>
+            <span className="text-electric-blue drop-shadow-[0_0_15px_rgba(100,206,251,0.4)]">PACKAGES.</span>
           </h1>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-lg leading-relaxed">
             Transparent pricing across every service we offer. Choose the tier that fits your goals.

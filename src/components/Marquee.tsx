@@ -3,10 +3,10 @@
 import React from 'react';
 
 const marqueeTexts = [
-  "Product Design", "UX/UI Research", 
-  "Interaction Design", "Figma Mastery", 
-  "Design Systems", "Visual Hierarchy", 
-  "Design Leadership", "Portfolio Readiness"
+  "ORGANIC SEO", "PAID SEARCH & PPC", 
+  "CONVERSION AUDITS", "SOCIAL CONTENT", 
+  "DATA ATTRIBUTION", "REVENUE SCALE", 
+  "FUNNEL OPTIMIZATION", "MARKET DOMINANCE"
 ];
 
 export default function Marquee() {

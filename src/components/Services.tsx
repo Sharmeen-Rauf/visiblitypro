@@ -150,7 +150,7 @@ export default function Services() {
             </span>
             <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
               HIGH-PERFORMANCE <br />
-              <span className="bg-gradient-to-r from-white via-white to-electric-blue bg-clip-text text-transparent">GROWTH.</span>
+              <span className="text-electric-blue drop-shadow-[0_0_15px_rgba(100,206,251,0.4)]">GROWTH.</span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-md text-left leading-relaxed">

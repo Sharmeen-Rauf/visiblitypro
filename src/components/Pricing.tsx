@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, ShieldAlert } from 'lucide-react';
+import { Check, ArrowRight, Lock } from 'lucide-react';
 import Tilt from './Tilt';
 
 interface Package {
@@ -20,50 +20,50 @@ interface Package {
 
 const packagesList: Package[] = [
   {
-    title: "Self-Paced Curriculum",
-    price: "$450",
+    title: "Traffic Audit Sprint",
+    price: "$1,850",
     period: "one-off",
-    subtitle: "Lifetime curriculum access & update log.",
+    subtitle: "Deep technical diagnostic & pipeline audit.",
     features: [
-      "Full video lectures & resources",
-      "Figma workspace component libraries",
-      "Monthly community group reviews",
-      "Lifetime Slack group access"
+      "Technical crawl analysis",
+      "Competitor keyword gap extraction",
+      "Indexation bug and redirect cleanses",
+      "2-Hour squad video alignment briefing"
     ],
-    cta: "Purchase Access",
-    tag: "Standard",
+    cta: "Order Audit Sprint",
+    tag: "Audit",
     colSpan: "col-span-12 lg:col-span-4",
     color: "rgba(100, 206, 251, 0.15)",
   },
   {
-    title: "Cohort Bootcamp",
-    price: "$2,400",
-    period: "one-off",
-    subtitle: "12-week interactive intensive design cohort.",
+    title: "Accelerated Scale",
+    price: "$3,500",
+    period: "/mo",
+    subtitle: "Rapid ad scaling and SEO content velocity.",
     features: [
-      "Everything in Self-Paced package",
-      "2× Weekly live instructor critiques",
-      "Real-world group capstone project",
-      "Structured career roadmap planning"
+      "Dedicated Growth Engineer",
+      "Multi-channel PPC ad sprints",
+      "8 Long-form semantic topic clusters",
+      "Weekly diagnostic briefing streams"
     ],
-    cta: "Enroll in Cohort",
+    cta: "Enroll in Program",
     tag: "Popular",
     featured: true,
     colSpan: "col-span-12 lg:col-span-4",
     color: "rgba(96, 165, 250, 0.3)",
   },
   {
-    title: "1-on-1 Mentorship",
-    price: "$4,800",
-    period: "one-off",
-    subtitle: "Direct career placement tutoring & mock tests.",
+    title: "Retained Growth Partner",
+    price: "$7,500",
+    period: "/mo",
+    subtitle: "Complete digital dominance squad retainer.",
     features: [
-      "Everything in Cohort Bootcamp",
-      "Weekly 1-on-1 design critique slots",
-      "Job application portfolio reviews",
-      "Exclusive recruiter placement index"
+      "Everything in Accelerated Scale",
+      "Unlimited high-conversion landing pages",
+      "Continuous technical SEO + local Maps",
+      "Dedicated creative asset generation"
     ],
-    cta: "Apply for Mentor",
+    cta: "Retain Growth Squad",
     tag: "Premium",
     colSpan: "col-span-12 lg:col-span-4",
     color: "rgba(100, 206, 251, 0.15)",
@@ -138,7 +138,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
               {pkg.title}
             </h3>
             
-            <p className="text-xs text-zinc-500 mt-2 min-h-[32px] leading-relaxed">
+            <p className="text-xs text-zinc-500 mt-2 min-h-[32px] leading-relaxed font-sans">
               {pkg.subtitle}
             </p>
 
@@ -161,7 +161,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
                   }`}>
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </div>
-                  <span className="text-xs text-zinc-400 leading-snug group-hover:text-zinc-300 transition-colors duration-300">
+                  <span className="text-xs text-zinc-400 leading-snug group-hover:text-zinc-300 transition-colors duration-300 font-sans">
                     {feat}
                   </span>
                 </div>
@@ -172,7 +172,7 @@ function PricingCard({ pkg, index }: { pkg: Package; index: number }) {
           {/* Interactive Button */}
           <div className="mt-10">
             <a
-              href={`https://wa.me/923146773542?text=Hello%20DesignPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20program%20(${pkg.price}).`}
+              href={`https://wa.me/923146773542?text=Hello%20VizibilityPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.title)}%20package%20(${pkg.price}).`}
               target="_blank"
               rel="noopener noreferrer"
               className={`w-full relative group inline-flex items-center justify-center gap-2 py-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
@@ -208,15 +208,15 @@ export default function Pricing() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="flex flex-col gap-4 text-left max-w-xl">
             <span className="text-xs font-mono font-bold tracking-[0.3em] text-electric-blue uppercase">
-              TUITION INVESTMENT
+              GROWTH INVESTMENT
             </span>
             <h2 className="font-display font-black text-4xl md:text-6xl tracking-tight leading-[0.95] text-white uppercase">
-              TRANSPARENT TUITION <br />
-              <span className="bg-gradient-to-r from-electric-blue via-white to-cyber-violet bg-clip-text text-transparent">TIERS.</span>
+              TRANSPARENT GROWTH <br />
+              <span className="text-electric-blue drop-shadow-[0_0_15px_rgba(100,206,251,0.4)]">TIERS.</span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-zinc-400 max-w-md text-left leading-relaxed">
-            Choose the pace that matches your goals. Flat rates with no hidden fees and dedicated career placement support from day one.
+            Choose the package that matches your revenue goals. Flat rates with no hidden fees and dedicated strategic support from day one.
           </p>
         </div>
 
@@ -229,8 +229,8 @@ export default function Pricing() {
 
         {/* Small Risk Guarantee Footer */}
         <div className="w-full mt-4 flex items-center justify-center gap-3 py-4 px-6 rounded-3xl bg-white/[0.01] border border-white/5 max-w-3xl mx-auto text-xs text-zinc-500 font-mono uppercase">
-          <ShieldAlert className="w-4 h-4 text-cyber-violet" />
-          <span>Need a customized installment payment structure? <a href="#contact" className="text-white hover:underline">Contact our enrollment coordinators</a></span>
+          <Lock className="w-4 h-4 text-cyber-violet" />
+          <span>NEED A CUSTOMIZED RETAINER OR PERFORMANCE-BASED STRUCTURE? <a href="#contact" className="text-white hover:underline">CONTACT OUR STRATEGY DIRECTORS</a></span>
         </div>
       </div>
     </section>
