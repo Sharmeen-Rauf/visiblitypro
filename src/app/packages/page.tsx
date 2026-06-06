@@ -444,13 +444,23 @@ function PricingCard({ tier }: { tier: Tier }) {
       <div className="mt-auto pt-6">
         <Magnetic strength={0.2}>
           {tier.featured ? (
-            <button className="w-full bg-white text-black hover:bg-zinc-200 transition-colors py-3.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold shadow-lg shadow-white/5 cursor-pointer">
+            <a
+              href={`https://wa.me/923146773542?text=Hello%20VizibilityPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(tier.name)}%20package%20(${tier.price}).`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-white text-black hover:bg-zinc-200 transition-colors py-3.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold shadow-lg shadow-white/5 cursor-pointer inline-block text-center"
+            >
               {tier.ctaText}
-            </button>
+            </a>
           ) : (
-            <button className="w-full border border-white/15 text-zinc-300 hover:bg-white/[0.04] hover:text-white hover:border-white/30 transition-all py-3.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold cursor-pointer">
+            <a
+              href={`https://wa.me/923146773542?text=Hello%20VizibilityPro,%20I%20am%20interested%20in%20the%20${encodeURIComponent(tier.name)}%20package%20(${tier.price}).`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full border border-white/15 text-zinc-300 hover:bg-white/[0.04] hover:text-white hover:border-white/30 transition-all py-3.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold cursor-pointer inline-block text-center"
+            >
               {tier.ctaText}
-            </button>
+            </a>
           )}
         </Magnetic>
       </div>
